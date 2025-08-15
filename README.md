@@ -18,15 +18,80 @@ Using your webcam, it monitors whether you’re paying attention — and if you�
 ---
 
 ## 📦 Installation
-```bash
-# Clone the repo
+
+### Clone the repo
+``` 
 git clone https://github.com/<your-username>/EyesOnU.git
 cd EyesOnU
+```
+### Create virtual environment (optional but recommended)
 
-# Create virtual environment (optional but recommended)
+```
 python -m venv .venv
-source .venv/bin/activate   # Linux/Mac
-.venv\Scripts\activate      # Windows
+source .venv/bin/activate  # Linux/Mac
 
-# Install dependencies
+
+.venv\Scripts\activate      # Windows
+```
+
+## Install dependencies
+```
 pip install -r requirements.txt
+```
+
+## ▶️ Usage
+
+- Put your GIF assets in the assets/ folder or add them via the Add GIF button in the app.
+- Launch EyesOnU:
+```
+python eyesonu.py
+```
+
+### In the UI:
+
+- Refresh Cameras → choose your webcam
+
+- Set delay (seconds) and FPS
+
+- Add or remove reaction GIFs
+
+- Click Start Session — and stay focused! 😉
+
+## 🛠 Requirements
+
+- Python 3.8+
+
+- OpenCV (opencv-python)
+
+- PyQt5
+
+- NumPy
+
+- imageio
+
+
+## 📌 Future Plans (v2 ideas)
+
+- Sound effects synced with GIFs
+
+- Stats dashboard (focus % per session)
+
+- Custom reaction triggers (per keyword or posture)
+
+- Minimal resource mode for low-end devices
+
+- suggest more! 
+
+## 🖤 License
+
+**MIT License — use, modify, and share freely.**
+
+## 🙏 Credits
+
+Built with:
+
+- OpenCV
+
+- PyQt5
+
+- ImageIO
